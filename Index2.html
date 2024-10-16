@@ -17,23 +17,33 @@
             line-height: 1.6;
         }
         header {
-            background: #333;
+            background: url('https://via.placeholder.com/1920x600/333/fff?text=Tech+Background') no-repeat center center; /* Placeholder for tech background */
+            background-size: cover;
             color: #fff;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
+        }
+        nav {
+            background: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
+            padding: 10px 0;
         }
         nav ul {
             list-style: none;
             display: flex;
             justify-content: center;
+            flex-wrap: wrap; /* Allow items to wrap */
         }
         nav ul li {
-            margin: 0 20px;
+            margin: 0 15px;
         }
         nav ul li a {
             color: #fff;
             text-decoration: none;
             font-weight: bold;
+        }
+        nav .logo {
+            margin-right: auto;
+            padding-left: 20px; /* Space for logo */
         }
         section {
             padding: 40px 20px;
@@ -90,12 +100,8 @@
             cursor: pointer;
         }
 
-
-    </style>
-    <style>
-            /* Responsive iframe styles */
-        .iframe-container 
-        {
+        /* Responsive iframe styles */
+        .iframe-container {
             position: relative;
             width: 100%;
             height: 0;
@@ -103,8 +109,7 @@
             margin: 20px 0; /* Add some spacing */
         }
 
-        .iframe-container iframe 
-        {
+        .iframe-container iframe {
             position: absolute;
             top: 0;
             left: 0;
@@ -113,20 +118,19 @@
             border: none; /* Remove border */
         }
         .whatsapp-button {
-        display: inline-block;
-        background-color: #25D366;
-        color: white;
-        border-radius: 5px;
-        padding: 5px 10px;
-        margin-left: 10px;
-        text-decoration: none;
-        font-size: 14px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            border-radius: 5px;
+            padding: 5px 10px;
+            margin-left: 10px;
+            text-decoration: none;
+            font-size: 14px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
         }
         .whatsapp-button i {
-        margin-right: 5px; /* Add some space between icon and text */
+            margin-right: 5px; /* Add some space between icon and text */
         }
-
     </style>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -136,19 +140,27 @@
 
     <!-- Header -->
     <header>
-        <nav class="avbar navbar-dark bg-primary" >
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li>
-                <a href="https://wa.me/+917083148500" target="_blank">WhatsappMe</a>
-                <a href="https://wa.me/+917083148500" target="_blank" class="whatsapp-button">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand logo" href="#">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Microsoft_logo.svg" alt="Microsoft Logo" style="height: 40px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://wa.me/+917083148500" target="_blank">WhatsappMe</a>
+                        <a href="https://wa.me/+917083148500" target="_blank" class="whatsapp-button">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -206,47 +218,31 @@
         </div>
     </section>
 
-    <!-- This is actually a Microsoft Form which collect responses -->
-<!--     
-    <embed src="https://forms.office.com/r/KzZcDnTdqw?embed=true"> </embed>
-    
-    <!-- Iframe Section -->
-    <!-- <div id="contact" class="iframe-container">
-        <iframe id="embeddedForm" src="https://gmail.tablesprint.com/dashboard/VTJGc2RHVmtYMThSeW1BOXplVTBKdmY2Q1dBVDhXcURlMzZKVmhvNzJRMD0=" title="Embedded Form" scrolling="yes"></iframe>
-    </div> --> -->
-    <!-- <div id="contact" class="iframe-container">
-        <iframe id="embeddedForm" src="https://akshaytax2014.survey.fm/problem-you-face-in-management-of-healthcare-facility-day-to-day" title="Embedded Form" scrolling="yes"></iframe>
-    </div>
-
-    <div id="contact" class="iframe-container">
-    <iframe frameborder="0" width="100%" height="600" scrolling="auto" allowtransparency="true" src="https://akshaytax2014.survey.fm/problem-you-face-in-management-of-healthcare-facility-day-to-day?iframe=1"><a href="https://akshaytax2014.survey.fm/problem-you-face-in-management-of-healthcare-facility-day-to-day">View Survey</a></iframe>
-    </div> -->
-
     <div class="pd-embed" id="pd_1729069105480"></div>
     <script type="text/javascript">
-    var _polldaddy = [] || _polldaddy;
+        var _polldaddy = [] || _polldaddy;
 
-_polldaddy.push( {
-	type: 'slider',
-	title: 'Take Our Survey!',
-	body: 'Please help me finding what challenges you are facing in your business',
-    button: 'Get Started &raquo;',
-    domain: 'akshaytax2014.survey.fm',
-    id: 'problem-you-face-in-management-of-healthcare-facility-day-to-day',
-    placeholder: 'pd_1729069105480'
-} );
+        _polldaddy.push({
+            type: 'slider',
+            title: 'Take Our Survey!',
+            body: 'Please help me finding what challenges you are facing in your business',
+            button: 'Get Started &raquo;',
+            domain: 'akshaytax2014.survey.fm',
+            id: 'problem-you-face-in-management-of-healthcare-facility-day-to-day',
+            placeholder: 'pd_1729069105480'
+        });
 
-(function(d,c,j){if(!document.getElementById(j)){var pd=d.createElement(c),s;pd.id=j;pd.src='https://app.crowdsignal.com/survey.js';s=document.getElementsByTagName(c)[0];s.parentNode.insertBefore(pd,s);}}(document,'script','pd-embed'));
-</script>
-<noscript><a href="https://akshaytax2014.survey.fm/problem-you-face-in-management-of-healthcare-facility-day-to-day">Take Our Survey!</a></noscript>
+        (function(d,c,j){if(!document.getElementById(j)){var pd=d.createElement(c),s;pd.id=j;pd.src='https://app.crowdsignal.com/survey.js';s=document.getElementsByTagName(c)[0];s.parentNode.insertBefore(pd,s);}}(document,'script','pd-embed'));
+    </script>
+    <noscript><a href="https://akshaytax2014.survey.fm/problem-you-face-in-management-of-healthcare-facility-day-to-day">Take Our Survey!</a></noscript>
+
     <!-- Footer -->
-
-
-
     <footer>
         <p>&copy; 2024 Akshay Gatkal. All rights reserved.</p>
     </footer>
 
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
